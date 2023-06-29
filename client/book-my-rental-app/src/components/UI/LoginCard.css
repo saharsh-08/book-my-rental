@@ -1,0 +1,76 @@
+body {
+    background-color: #022b3a;
+}
+
+.loginForm {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: auto;
+    width: 650px;
+    background-color: #7dc89f;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+    height: 80px;
+}
+
+input {
+    width: 450px;
+    height: 25px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.alignDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.submitButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 45px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.success {
+    color: rgb(21, 117, 21);
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.resendPasswordLoginDiv {
+    text-align: right;
+}
+
+.resendPasswordLogin {
+    text-decoration: underline;
+    color: darkblue;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}

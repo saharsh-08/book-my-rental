@@ -1,0 +1,10 @@
+CREATE SCHEMA book_my_rental;
+USE book_my_rental;
+CREATE TABLE login (
+    email VARCHAR(50) PRIMARY KEY, 
+    password VARCHAR(50), 
+    name VARCHAR(50),
+    phone VARCHAR(20),
+    online VARCHAR(5)
+);
+INSERT INTO login VALUES ('test@123.com', '123', 'Saharsh', '+919979333311', 'NO');
