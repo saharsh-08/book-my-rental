@@ -5,7 +5,7 @@ const Dashboard = () => {
     const location = useLocation();
 
     const userDetails = location.state?.userDetails;
-    console.log(userDetails);
+    // console.log(userDetails);
     const userName = userDetails.name;
 
     return(
