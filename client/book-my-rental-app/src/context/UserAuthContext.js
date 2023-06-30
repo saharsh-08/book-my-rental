@@ -9,8 +9,12 @@ export const UserAuthContextProvider = ({ children }) => {
 
     const setUpRecaptcha = (number) => {
         const recaptchaVerifier = new RecaptchaVerifier(
-        "recaptcha-container",
-        {},
+        "recaptcha-container",{
+            size: "normal",
+            callback: (response) => {
+                console.log(response);
+            }
+        },
         auth)
         recaptchaVerifier.render();
         

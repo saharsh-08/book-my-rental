@@ -72,6 +72,10 @@ const OTPForm = () => {
         });
     }, [setError, phonenumber, setUpRecaptcha]);
 
+    const resendOTPHandler = () => {
+        window.location.reload(false);
+    };
+
     useEffect(() => {
         if (!recaptchaVerified) {
             getOTP();
@@ -117,6 +121,10 @@ const OTPForm = () => {
                                     />
                                 );
                             })}
+                        </div>
+                        <br />
+                        <div className="alignDiv" style={{display: recaptchaVerified ? "flex" : "none"}}>
+                                <button type="button" className="resendPasswordLogin" onClick={resendOTPHandler} >Resend OTP</button>
                         </div>
                         <br /> {isError && <span className="error"> {customError} </span>}
                         <div className="alignDiv">
