@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@grpc/grpc-js": "^1.8.17",
     "firebase": "^9.23.0",
     "redux": "^4.2.1"
   }
